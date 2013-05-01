@@ -1,0 +1,69 @@
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+public class LogIn extends JFrame{
+  private static JLabel num1, num2;
+  private JPanel pan1, pan2;
+  private JButton butt1, butt2;
+  private  JFrame fra1, fra2;
+
+  private TextField text1, text2;
+  public LogIn(){
+  	super ("Picchi's Pizza! Spitting in food since 1937");
+  	setLayout (new FlowLayout());
+  	
+  	num1 = new JLabel("Username!");
+  	num1.setToolTipText("sdsadsad:");
+  	add(num1);
+  	
+  
+  }
+  
+  
+  public static void main (String[] args){
+  	LogIn gui = new LogIn();
+  	//gui.setBackgroundColor(Color.MAGENTA);
+  	gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  	gui.setSize(1000,1000);
+  	
+  	JPanel pann = new JPanel();
+  
+  	 pann.setLayout(new GridLayout(1,1)); 
+  	JLabel label = new JLabel();
+  	
+  	label.setText("Enter info");
+  	
+  	JTextField text1 = new JTextField();
+  	pann.add(label);
+  	pann.add(text1);
+  	
+  	
+  	JTextField text2 = new JTextField();
+  	pann.add(text2);
+  	
+  
+  	JButton butt1 = new JButton("User?");
+  	
+  	
+  	butt1 = new JButton("Log In");
+  	num1 = new JLabel("Log In");
+  	
+  	
+  	gui.getContentPane().add(pann);
+  
+  	gui.setVisible(true);
+  	pann.add(butt1);
+  	pann.add(num2);
+  
+  	
+  }
+
+
+  private void setBackgroundColor(Color magenta) {
+  	// TODO Auto-generated method stub
+  	
+  }
+  
+}
+
+ 
